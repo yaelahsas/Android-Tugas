@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "997190480159",
+    "firebase_url": "https://aplikasi-tugasku.firebaseio.com",
+    "project_id": "aplikasi-tugasku",
+    "storage_bucket": "aplikasi-tugasku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997190480159:android:8a646abf2dd95d44",
+        "android_client_info": {
+          "package_name": "tugas.besar.tugasku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997190480159-uv192p51kvbjqh5khcolas51icb5d4r2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tugas.besar.tugasku",
+            "certificate_hash": "5bab272b5a79dded6c2160bd0f0404f350148403"
+          }
+        },
+        {
+          "client_id": "997190480159-ueipuimqsujp7v52bj7se3nobbljj0k1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZGEOpNPk3kqcy_sO3dDP-5xtn9ZMwRZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997190480159-ueipuimqsujp7v52bj7se3nobbljj0k1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
