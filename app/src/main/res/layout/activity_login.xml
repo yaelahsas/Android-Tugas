@@ -4,127 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/c"
+    android:background="@drawable/a"
     tools:context="tugas.besar.tugasku.Login">
 
-    <ScrollView
+
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="wrap_content">
+
+        <EditText
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="top"
-            android:orientation="vertical"
-            android:weightSum="1">
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Masukkan Email.."
+            android:id="@+id/LoginEmail"
+            />
 
-            <ImageView
-                app:srcCompat="@drawable/a"
-                android:id="@+id/imageView3"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Masukkan Password"
+            android:id="@+id/LoginPass"
+            />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Nama Lengkap"
-                android:textStyle="normal"
-                android:layout_height="wrap_content" />
+        <Button
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:id="@+id/tombolLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint=""
-                android:id="@+id/LoginEmail"
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tulisanBelumPunyaAkun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun ? DAFTAR."/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jenis Kelamin" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/LoginPass"
-                android:hint=""
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No. Handphone/Telepon" />
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginhp"
-                android:hint=""
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Email"
-                android:textStyle="normal"
-                android:layout_height="wrap_content" />
+    </LinearLayout>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginem"
-                android:hint=""
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Password" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginpw"
-                android:hint=""
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Konfirmasi Password" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginkn"
-                android:hint=""
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/tombolLogin"
-                    android:background="@drawable/desain1"
-                    android:text="SIGN UP"
-                    android:layout_marginTop="20dp"/>
-
-                <TextView
-                    android:layout_marginTop="5dp"
-                    android:id="@+id/tulisanBelumPunyaAkun"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Belum punya akun ? DAFTAR."/>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
 </RelativeLayout>
