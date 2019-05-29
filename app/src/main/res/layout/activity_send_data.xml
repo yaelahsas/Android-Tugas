@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tugas.besar.tugasku.sendData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<TextView
+    android:text="Nama"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/sendNama"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/sendLaki"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:text="Laki-Laki" />
+    <CheckBox
+        android:id="@+id/sendPerempuan"
+        android:text="Perempuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Tlp"/>
+        <EditText
+            android:id="@+id/sendTelpon"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/sendKirimData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kirim"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
