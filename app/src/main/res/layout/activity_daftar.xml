@@ -14,14 +14,66 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:hint="Masukkan Email.."
-            android:id="@+id/daftarEmail"
-            />
+       
+
+            
+       
+
+
+            <ImageView
+                app:srcCompat="@drawable/a"
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" Username"
+                    android:textStyle="normal"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/user"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:id="@+id/daftarEmail"
+                    android:inputType="textAutoComplete"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/lock"
+                    android:text="Password"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:id="@+id/daftarPass"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/tombolDaftar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Login"
+                    android:textSize="18dp"
+                    android:background="@drawable/desain"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"/>
 
         <EditText
             android:layout_width="match_parent"
