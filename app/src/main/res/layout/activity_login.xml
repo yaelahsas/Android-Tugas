@@ -8,44 +8,6 @@
     tools:context="tugas.besar.tugasku.Login">
 
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="top"
-            android:orientation="vertical"
-            android:weightSum="1">
-
-            <ImageView
-                app:srcCompat="@drawable/a"
-                android:id="@+id/imageView3"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="30dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Nama Lengkap"
-                android:textStyle="normal"
-                android:layout_height="wrap_content" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint=""
-                android:id="@+id/LoginEmail"
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jenis Kelamin" />
-
-
 
     <LinearLayout
         android:layout_centerHorizontal="true"
