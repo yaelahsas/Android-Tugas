@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Daftar"/>
-        <activity android:name=".Login" />
-        <activity android:name=".Profile"/>
+        <activity android:name=".Profile" />
+        <activity android:name=".Login"/>
         <activity android:name=".sendData">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
