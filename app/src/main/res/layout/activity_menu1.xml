@@ -15,8 +15,16 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/tempatEmail"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="120dp"
+                android:text="Email User"
+                android:textSize="18dp" />
 
             <Button
+                android:id="@+id/tombolCari"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -34,11 +42,20 @@
                 android:layout_marginBottom="40dp"/>
 
             <Button
+                android:id="@+id/tombolAbout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/desain1"
                 android:text="ABOUT"
+                android:layout_marginBottom="40dp" />
+            <Button
+                android:id="@+id/tombolLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/desain1"
+                android:text="LOGOUT"
                 android:layout_marginBottom="40dp" />
 
         </LinearLayout>

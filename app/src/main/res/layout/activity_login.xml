@@ -6,124 +6,96 @@
     android:layout_height="match_parent"
     android:background="@drawable/c"
     tools:context="tugas.besar.tugasku.Login">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="top"
-            android:orientation="vertical"
-            android:weightSum="1">
+            android:orientation="vertical">
+
 
             <ImageView
                 app:srcCompat="@drawable/a"
-                android:id="@+id/imageView3"
+                android:id="@+id/imageView2"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
+                android:layout_marginTop="40dp"
                 android:layout_gravity="center"
-                android:layout_marginBottom="30dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Nama Lengkap"
-                android:textStyle="normal"
-                android:layout_height="wrap_content" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint=""
-                android:id="@+id/LoginEmail"
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jenis Kelamin" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/LoginPass"
-                android:hint=""
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="No. Handphone/Telepon" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginhp"
-                android:hint=""
-                android:inputType="number"
-                android:layout_marginBottom="3dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:text="Email"
-                android:textStyle="normal"
-                android:layout_height="wrap_content" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginem"
-                android:hint=""
-                android:inputType="textEmailAddress"
-                android:layout_marginBottom="3dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Password" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginpw"
-                android:hint=""
-                android:inputType="textPassword"
-                android:layout_marginBottom="3dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Konfirmasi Password" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/Loginkn"
-                android:hint=""
-                android:inputType="textPassword"
-                android:layout_marginBottom="3dp" />
+                android:layout_marginBottom="60dp" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_gravity="center">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text=" Username"
+                    android:textStyle="normal"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/user"
+                    android:layout_height="wrap_content" />
 
-                <Button
+                <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/tombolLogin"
-                    android:background="@drawable/desain1"
-                    android:text="SIGN UP"
-                    android:layout_marginTop="20dp"/>
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:id="@+id/LoginEmail"
+                    android:inputType="textAutoComplete"
+                    android:layout_marginBottom="5dp" />
 
                 <TextView
-                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/lock"
+                    android:text="Password"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:id="@+id/LoginPass"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/tombolLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Login"
+                    android:textSize="18dp"
+                    android:background="@drawable/desain"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum memiliki akun, silakan "
+                    android:layout_marginBottom="18dp"
+                    android:textSize="35px"
+                    android:id="@+id/textView"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:layout_marginTop="0dp"
                     android:id="@+id/tulisanBelumPunyaAkun"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Belum punya akun ? DAFTAR."/>
+                    android:text="Masuk DI Sini"/>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

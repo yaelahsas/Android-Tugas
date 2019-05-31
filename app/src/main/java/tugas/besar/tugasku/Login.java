@@ -45,6 +45,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         mAuth = FirebaseAuth.getInstance();
     if (  mAuth.getCurrentUser() != null){
 
+        Intent prof = new Intent(Login.this,menu1.class);
+        startActivity(prof);
         //buka Profile Activity
     }
         tblLogin.setOnClickListener(this);
@@ -82,7 +84,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
 
                         if (task.isSuccessful()){
                             finish();
-                         Intent prof = new Intent(Login.this,Profile.class);
+                         Intent prof = new Intent(Login.this,menu1.class);
                          startActivity(prof);
 
                         } else {
