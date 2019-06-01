@@ -124,7 +124,7 @@
                     android:id="@+id/tulisanPunyaAkun"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Belum punya akun ? DAFTAR."/>
+                    android:text="Sudah punya akun ! Silakan LOGIN."/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -93,7 +93,7 @@
                     android:id="@+id/tulisanBelumPunyaAkun"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Masuk DI Sini"/>
+                    android:text="DAFTAR"/>
             </LinearLayout>
 
         </LinearLayout>
