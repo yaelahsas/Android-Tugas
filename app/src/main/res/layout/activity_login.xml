@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:hint=""
                     android:id="@+id/LoginEmail"
-                    android:inputType="textAutoComplete"
+                    android:inputType="textEmailAddress"
                     android:layout_marginBottom="5dp" />
 
                 <TextView
@@ -62,38 +62,30 @@
                     android:inputType="textPassword"
                     android:layout_marginBottom="10dp"/>
 
-                <Button
-                    android:id="@+id/tombolLogin"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="Login"
-                    android:textSize="18dp"
-                    android:background="@drawable/desain"
-                    android:gravity="center_horizontal"
-                    android:layout_marginBottom="40dp"/>
+
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tombolLogin"
+                    android:background="@drawable/desain1"
+                    android:text="LOGIN"
+                    android:layout_marginTop="20dp" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Belum memiliki akun, silakan "
-                    android:layout_marginBottom="18dp"
-                    android:textSize="35px"
-                    android:id="@+id/textView"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentStart="true"/>
-
-                <TextView
-                    android:layout_marginTop="0dp"
+                    android:layout_marginTop="5dp"
                     android:id="@+id/tulisanBelumPunyaAkun"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="DAFTAR"/>
+                    android:text="Belum punya akun ? DAFTAR" />
             </LinearLayout>
 
         </LinearLayout>

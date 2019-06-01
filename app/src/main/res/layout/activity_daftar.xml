@@ -23,6 +23,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
+                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="30dp"/>
 
@@ -36,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint=""
-                android:id="@+id/LoginEmail"
+                android:id="@+id/daftarNama"
                 android:inputType="textAutoComplete"
                 android:layout_marginBottom="3dp" />
 
@@ -45,14 +46,25 @@
                 android:layout_height="wrap_content"
                 android:text="Jenis Kelamin" />
 
-            <EditText
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/LoginPass"
-                android:hint=""
-                android:inputType="textAutoComplete"
-                android:layout_marginBottom="3dp"/>
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
 
+                <CheckBox
+                    android:id="@+id/daftarLaki"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+
+                    android:text="Laki-Laki" />
+
+                <CheckBox
+                    android:id="@+id/daftarPerempuan"
+                    android:text="Perempuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -61,7 +73,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Loginhp"
+                android:id="@+id/daftarHp"
                 android:hint=""
                 android:inputType="number"
                 android:layout_marginBottom="3dp"/>
@@ -100,7 +112,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Loginkn"
+                android:id="@+id/daftarPassRe"
                 android:hint=""
                 android:inputType="textPassword"
                 android:layout_marginBottom="3dp" />

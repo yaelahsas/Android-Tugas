@@ -32,8 +32,8 @@ public class menu1 extends AppCompatActivity implements View.OnClickListener{
         FirebaseUser user = mAuth.getCurrentUser();
         tblSaldo = findViewById(R.id.isisaldo);
         tblCari = findViewById(R.id.tombolCari);
-        namaEmail = (TextView)findViewById(R.id.tempatEmail);
-        tblLogout = (Button)findViewById(R.id.tombolLogout);
+        namaEmail = findViewById(R.id.tempatEmail);
+        tblLogout = findViewById(R.id.tombolLogout);
         namaEmail.setText("Selamat Datang "+user.getEmail());
 
         tblLogout.setOnClickListener(this);
@@ -48,6 +48,7 @@ public class menu1 extends AppCompatActivity implements View.OnClickListener{
 
         if (view == tblLogout){
             finish();
+            mAuth.signOut();
             startActivity(new Intent(this,Login.class));
         }else if (view == tblSaldo){
             startActivity(new Intent(this,Saldo.class));

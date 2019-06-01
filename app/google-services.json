@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "997190480159-a60vhpj4ppelng0585afi2pme2b6vla5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tugas.besar.tugasku",
+            "certificate_hash": "2dd5909cf6cc9dabd493a35d370715a0a0475494"
+          }
+        },
+        {
           "client_id": "997190480159-uv192p51kvbjqh5khcolas51icb5d4r2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

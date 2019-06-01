@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (InterruptedException e){
                     e.printStackTrace();
                 }finally {
-                    startActivity(new Intent(MainActivity.this, Daftar.class));
+                    startActivity(new Intent(MainActivity.this, Login.class));
                     finish();
                 }
             }
