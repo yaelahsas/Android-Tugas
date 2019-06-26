@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d"
+    tools:context="tugas.besar.tugasku.About">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aplikasi depot galon"
+            android:textSize="35dp"
+            android:background="@drawable/bg_map"
+            android:layout_marginTop="100dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:text="Anda dapat melihat letak atau lokasi depot terdekat yang dekat dengan lokasi anda. aplikasi ini memudahkan anda melihat lokasi depot galon atau pengisian galon "
+            android:layout_marginTop="50dp"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

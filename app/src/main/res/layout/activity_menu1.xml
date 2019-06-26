@@ -19,10 +19,11 @@
                 android:id="@+id/tempatEmail"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_marginHorizontal="120dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
                 android:text="Email User"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:layout_marginBottom="100dp"/>
 
             <Button
                 android:id="@+id/tombolCari"
