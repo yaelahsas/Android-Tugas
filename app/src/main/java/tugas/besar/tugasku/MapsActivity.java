@@ -56,8 +56,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.setMyLocationEnabled(true);
         mMap.setBuildingsEnabled(true);
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-8.3667709, 114.1558256);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Depot Galon"));
-        mMap.animateCamera( CameraUpdateFactory.newLatLngZoom(sydney,15.0f) );
+        LatLng kota1 = new LatLng(-8.3667709, 114.1558256);
+        mMap.addMarker(new MarkerOptions().position(kota1).title("Depot Galon Genteng"));
+        LatLng kota2 = new LatLng(-8.389390, 114.246113);
+        mMap.addMarker(new MarkerOptions().position(kota2).title("Depot Galon Srono"));
+        LatLng kota3 = new LatLng(-8.297415, 114.308094);
+        mMap.addMarker(new MarkerOptions().position(kota3).title("Depot Galon Kabat"));
+        LatLng kota4 = new LatLng(-8.299738, 114.299928);
+        mMap.addMarker(new MarkerOptions().position(kota4).title("Depot Galon Rogojampi"));
+        mMap.animateCamera( CameraUpdateFactory.newLatLngZoom(kota1,15.0f) );
     }
 }

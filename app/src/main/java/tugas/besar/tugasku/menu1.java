@@ -13,7 +13,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class menu1 extends AppCompatActivity implements View.OnClickListener{
 
     private TextView namaEmail;
-    Button tblLogout,tblCari,tblSaldo;
+    Button tblLogout,tblCari,tblSaldo,tblAbout;
     FirebaseAuth mAuth;
 
 
@@ -31,6 +31,7 @@ public class menu1 extends AppCompatActivity implements View.OnClickListener{
 
         FirebaseUser user = mAuth.getCurrentUser();
         tblSaldo = findViewById(R.id.isisaldo);
+        tblAbout = findViewById(R.id.tombolAbout);
         tblCari = findViewById(R.id.tombolCari);
         namaEmail = findViewById(R.id.tempatEmail);
         tblLogout = findViewById(R.id.tombolLogout);
@@ -38,6 +39,7 @@ public class menu1 extends AppCompatActivity implements View.OnClickListener{
 
         tblLogout.setOnClickListener(this);
         tblSaldo.setOnClickListener(this);
+        tblAbout.setOnClickListener(this);
         tblCari.setOnClickListener(this);
 
 
@@ -52,6 +54,8 @@ public class menu1 extends AppCompatActivity implements View.OnClickListener{
             startActivity(new Intent(this,Login.class));
         }else if (view == tblSaldo){
             startActivity(new Intent(this,Saldo.class));
+        }else if (view == tblAbout){
+            startActivity(new Intent(this,About.class));
         }else if (view == tblCari){
 
             startActivity(new Intent(this,MapsActivity.class));
